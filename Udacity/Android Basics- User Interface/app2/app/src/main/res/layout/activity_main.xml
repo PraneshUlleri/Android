@@ -13,32 +13,45 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="|Pranesh Ulleri" />
+        android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="|Pranesh Ulleri"
+            android:background="@color/colorAccent"
+            />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Pranesh Ulleri" />
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="Pranesh Ulleri"
+            android:background="#3F51B5"/>
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Pranesh Ulleri" />
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="Pranesh Ulleri"
+            android:background="#18FFFF"
+            />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Pranesh" />
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="Pranesh"
+            android:background="#3F51B5"
+            />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="P!" />
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="P!"
+            android:background="@color/colorAccent"/>
     </LinearLayout>
 </RelativeLayout>
