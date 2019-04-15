@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,12 +7,71 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/topcenter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Ben " />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/botleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Lyla " />
+
+    <TextView
+        android:id="@+id/botright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="Jennie" />
+
+    <TextView
+        android:id="@+id/botrightab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/botrightab1"
+        android:text="Amy" />
+
+    <TextView
+        android:id="@+id/toptoleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/topcenter"
+        android:text="Kunal " />
+
+    <TextView
+        android:id="@+id/toptoright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/topcenter"
+        android:text="Kagure" />
+
+    <TextView
+        android:id="@+id/bottoright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/botleft"
+        android:layout_alignBottom="@id/botleft"
+        android:text="Me" />
+
+    <TextView
+        android:id="@+id/botleftabove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/botleft"
+        android:text="Natalie" />
+
+    <TextView
+        android:id="@+id/botrightab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/botright"
+        android:layout_alignParentRight="true"
+        android:text="Omoju" />
+</RelativeLayout>
