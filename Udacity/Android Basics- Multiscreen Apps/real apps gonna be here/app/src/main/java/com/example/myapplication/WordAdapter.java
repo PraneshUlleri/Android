@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class WordAdapter extends ArrayAdapter<word> {
+
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -42,4 +44,4 @@ public class WordAdapter extends ArrayAdapter<word> {
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView
         return listItemView;
-    }
+    }}
