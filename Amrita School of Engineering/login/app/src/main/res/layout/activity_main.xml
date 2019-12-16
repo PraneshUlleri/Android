@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:background="@drawable/bkground"
     android:theme="@android:style/Theme.Holo.NoActionBar.Overscan"
-    >
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/loginTXT"
@@ -23,5 +22,17 @@
         app:layout_constraintTop_toTopOf="parent"
 
         />
+
+    <TextView
+        android:id="@+id/textquiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="Quiz"
+        android:textColor="@color/colorWhite"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/loginTXT"
+        app:layout_constraintStart_toStartOf="@+id/loginTXT" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

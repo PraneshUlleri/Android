@@ -13,9 +13,7 @@ import android.widget.TextView;
 import static java.lang.Thread.sleep;
 
 public class MainActivity extends AppCompatActivity {
-    Animation animMoveUp ;
-  //  ActionBar actionBar;
-int i=1;
+    TextView textlogin,textquiz;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,15 +22,23 @@ int i=1;
      //   actionBar = getActionBar();
      //   actionBar.hide();
 
-        final TextView textlogin;
-        textlogin=findViewById(R.id.loginTXT);
 
+        textlogin=findViewById(R.id.loginTXT);
+        textquiz=findViewById(R.id.textquiz);
 
         textlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                     Intent act2= new Intent(getApplicationContext(),Loginpage.class);
                     startActivity(act2);
+            }
+        });
+        textquiz.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent actq=new Intent(getApplicationContext(),quiz.class);
+                startActivity(actq);
             }
         });
 
