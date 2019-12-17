@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".quiz"></activity>
+        <activity android:name=".digitalclock"></activity>
+        <activity android:name=".dateTime" />
+        <activity android:name=".calc" />
+        <activity android:name=".result" />
+        <activity android:name=".quiz" />
         <activity android:name=".Loginpage" />
         <activity android:name=".MainActivity">
             <intent-filter>

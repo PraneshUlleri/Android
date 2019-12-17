@@ -20,13 +20,16 @@
         android:background="@drawable/roundcard"
         android:layout_margin="15dp"
         card_view:cardCornerRadius="50dp"
-        android:elevation="10dp"
+
+        android:elevation="2dp"
         >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+
+            >
 
             <Space
                 android:layout_width="match_parent"
@@ -47,10 +50,10 @@
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/textquestion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView"
+                android:text="Textquestion"
                 android:textSize="18dp"
                 android:textColor="#fff"
                 android:layout_margin="25dp"
@@ -82,30 +85,40 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_margin="30dp"
+
             >
 
 
             <RadioGroup
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:id="@+id/radiogrp"
+                >
 
                 <RadioButton
-                    android:id="@+id/radioButton"
+                    android:id="@+id/rbtnop1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="RadioButton" />
+                    android:text="option1"
+                    android:onClick="clickbtn"
+
+                    />
 
                 <RadioButton
-                    android:id="@+id/radioButton2"
+                    android:id="@+id/rbtnop2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="RadioButton" />
+                    android:text="option2"
+                    android:onClick="clickbtn"
+                    />
 
                 <RadioButton
-                    android:id="@+id/radioButton3"
+                    android:id="@+id/rbtnop3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="RadioButton" />
+                    android:text="option1"
+                    android:onClick="clickbtn"
+                    />
             </RadioGroup>
         </LinearLayout>
 
@@ -122,17 +135,7 @@
         >
 
         <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="skip"
-            android:textColor="#111"
-            android:background="@drawable/realbtn"
-            />
-
-        <Button
-            android:id="@+id/button4"
+            android:id="@+id/btnnext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
