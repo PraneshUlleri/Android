@@ -8,7 +8,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    TextView textlogin,textquiz,cal,dat;
+    TextView textlogin,textquiz,cal,dat, clock;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         textlogin=findViewById(R.id.loginTXT);
         textquiz=findViewById(R.id.textquiz);
         cal=findViewById(R.id.textcalc);
+        clock=findViewById(R.id.textdigitalclock);
         textlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -50,6 +51,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent dt=new Intent(getApplicationContext(),dateTime.class);
                 startActivity(dt);
+            }
+        });
+        clock.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent clk=new Intent(getApplicationContext(),digitalclock.class);
+                startActivity(clk);
             }
         });
 
