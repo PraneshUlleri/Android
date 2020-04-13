@@ -16,11 +16,24 @@
     <TextView
         android:id="@+id/calctext"
         android:layout_width="match_parent"
-        android:layout_height="98dp"
-        android:layout_margin="20dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:textSize="35dp"
         android:gravity="bottom"
         android:text=""
+        android:background="#3FFADFDF"
+        />
+    <TextView
+        android:id="@+id/calctext1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+       android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="35dp"
+        android:gravity="right"
+        android:text=""
+        android:textAlignment="gravity"
         android:background="#3FFADFDF"
         />
 

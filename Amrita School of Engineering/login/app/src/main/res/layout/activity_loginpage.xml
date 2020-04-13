@@ -42,7 +42,7 @@
         android:layout_height="50dp"
         android:layout_marginBottom="53dp"
         android:background="@drawable/rndbtn"
-        android:drawableLeft="@drawable/ic_action_name"
+        android:drawableLeft="@drawable/ic_action_lock"
         android:hint="  password"
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/button"
@@ -73,7 +73,7 @@
         android:layout_height="50dp"
         android:layout_marginBottom="154dp"
         android:background="@drawable/realbtn"
-        android:text="Button"
+        android:text="login"
         android:textColor="@color/colorAccent"
 
         app:layout_constraintBottom_toBottomOf="parent"
